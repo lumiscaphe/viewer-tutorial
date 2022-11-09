@@ -1,0 +1,14 @@
+{
+  "name": "viewer-tutorial",
+  "version": "1.0.0",
+  "description": "Create a simple viewer with Lumiscaphe 3D Viewer.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lumiscaphe",
+  "license": "ISC",
+  "dependencies": {
+    "@lumiscaphe/viewer": "^4.0.7"
+  }
+}
