@@ -1,22 +1,9 @@
 const container = document.getElementById('viewer');
 
-const config = {
-    server: 'https://wr-lumis3d.lumiscaphe.com',
-    api: 'v1',
-    fit: 'cover',
-    events: {
-        onLoadStart: () => { },
-        onLoadProgress: () => { },
-        onLoadEnd: () => { },
-        onLoadError: () => { },
-        onInteraction: () => { },
-        onVrcubeInteraction: () => { },
-        onVrobjectInteraction: () => { },
-    },
-};
-
-const viewer = new LumiscapheViewer.Viewer(container, config);
+const viewer = new LumiscapheViewer.Viewer(container, {
+    server: 'https://wr.coatifactory.com',
+});
 
 viewer.setView({ mode: 'image', camera: '/360' });
 
-viewer.load({ database: '00476bf8-1356-45dd-8d41-960477d9fdd3' });
+viewer.load({ database: 'e9005c40-60cf-4344-b4f2-65847923faee' });
