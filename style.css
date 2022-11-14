@@ -10,8 +10,3 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-#viewer {
-    width: 800px;
-    height: 600px;
-}
