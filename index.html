@@ -10,87 +10,92 @@
 </head>
 
 <body>
-    <div id="viewer-wrapper">
-        <img id="viewer-content" src="" alt="">
-    </div>
+    <main id="main">
+        <div id="form-wrapper">
+            <form id="viewer-form" action="">
+                <div class="form-field">
+                    <label class="form-label" for="bookmarkSet">Bookmark Set</label> <br />
+                    <select name="bookmarkSet" id="bookmarkSet">
+                        <option value="">--- Select Bookmark Set ---</option>
+                    </select>
+                </div>
 
-    <form id="viewer-form" action="">
-        <div class="form-field">
-            <label class="form-label" for="bookmarkSet">Bookmark Set</label> <br />
-            <select name="bookmarkSet" id="bookmarkSet">
-                <option value="">--- Select Bookmark Set ---</option>
-            </select>
+                <div class="form-field">
+                    <label class="form-label" for="bookmark">Bookmark</label> <br />
+                    <select name="bookmark" id="bookmark">
+                        <option value="">--- Select Bookmark ---</option>
+                        <option value="360" selected>360</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="background">Background</label> <br />
+                    <select name="background" id="background">
+                        <option value="">--- Select Background ---</option>
+                        <option value="product" selected>Product</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="width">Width</label> <br />
+                    <input class="form-input" type="text" name="width" id="width" value="960" />
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="height">Height</label> <br />
+                    <input class="form-input" type="text" name="height" id="height" value="720" />
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="softwareAntialiasing">Software Antialiasing</label> <br />
+                    <input type="checkbox" name="softwareAntialiasing" id="softwareAntialiasing" value="false" />
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="superSampling">Super Sampling</label> <br />
+
+                    <input type="radio" name="superSampling" id="superSampling.1" value="1" />
+                    <label for="superSampling.1">1</label> <br />
+
+                    <input type="radio" name="superSampling" id="superSampling.2" value="2" checked />
+                    <label for="superSampling.2">2</label> <br />
+
+                    <input type="radio" name="superSampling" id="superSampling.3" value="3" />
+                    <label for="superSampling.3">3</label> <br />
+
+                    <input type="radio" name="superSampling" id="superSampling.4" value="4" />
+                    <label for="superSampling.4">4</label> <br />
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="imageFormat">Image Format</label> <br />
+
+                    <input type="radio" name="imageFormat" id="imageFormat.jpeg" value="jpeg" checked />
+                    <label for="imageFormat.jpeg">jpeg</label> <br />
+
+                    <input type="radio" name="imageFormat" id="imageFormat.png" value="png" />
+                    <label for="imageFormat.png">png</label> <br />
+
+                    <input type="radio" name="imageFormat" id="imageFormat.webp" value="webp" />
+                    <label for="imageFormat.webp">webp</label> <br />
+                </div>
+
+                <div class="form-field">
+                    <label class="form-label" for="imageQuality">Image Quality (<span
+                            id="imageQualityIndicator">80</span>)</label> <br />
+                    <input class="form-input" type="range" name="imageQuality" id="imageQuality" min="0" max="100" value="80" />
+                </div>
+
+                <div class="form-field">
+                    <button class="form-button" type="submit">Generate image</button>
+                </div>
+            </form>
         </div>
 
-        <div class="form-field">
-            <label class="form-label" for="bookmark">Bookmark</label> <br />
-            <select name="bookmark" id="bookmark">
-                <option value="">--- Select Bookmark ---</option>
-                <option value="360" selected>360</option>
-            </select>
+        <div id="viewer-wrapper">
+            <img id="viewer-content" src="" alt="Boat">
         </div>
-
-        <div class="form-field">
-            <label class="form-label" for="background">Background</label> <br />
-            <select name="background" id="background">
-                <option value="">--- Select Background ---</option>
-                <option value="product" selected>Product</option>
-            </select>
-        </div>
-
-        <div class="form-field">
-            <label class="form-label" for="width">Width</label> <br />
-            <input class="form-input" type="text" name="width" id="width" value="960" />
-        </div>
-
-        <div class="form-field">
-            <label class="form-label" for="height">Height</label> <br />
-            <input class="form-input" type="text" name="height" id="height" value="720" />
-        </div>
-
-        <div class="form-field">
-            <label class="form-label" for="softwareAntialiasing">Software Antialiasing</label> <br />
-            <input type="checkbox" name="softwareAntialiasing" id="softwareAntialiasing" value="false" />
-        </div>
-
-        <div class="form-field">
-            <label class="form-label" for="superSampling">Super Sampling</label> <br />
-
-            <input type="radio" name="superSampling" id="superSampling.1" value="1" />
-            <label for="superSampling.1">1</label> <br />
-
-            <input type="radio" name="superSampling" id="superSampling.2" value="2" checked />
-            <label for="superSampling.2">2</label> <br />
-
-            <input type="radio" name="superSampling" id="superSampling.3" value="3" />
-            <label for="superSampling.3">3</label> <br />
-
-            <input type="radio" name="superSampling" id="superSampling.4" value="4" />
-            <label for="superSampling.4">4</label> <br />
-        </div>
-
-        <div class="form-field">
-            <label class="form-label" for="imageFormat">Image Format</label> <br />
-
-            <input type="radio" name="imageFormat" id="imageFormat.jpeg" value="jpeg" checked />
-            <label for="imageFormat.jpeg">jpeg</label> <br />
-
-            <input type="radio" name="imageFormat" id="imageFormat.png" value="png" />
-            <label for="imageFormat.png">png</label> <br />
-
-            <input type="radio" name="imageFormat" id="imageFormat.webp" value="webp" />
-            <label for="imageFormat.webp">webp</label> <br />
-        </div>
-
-        <div class="form-field">
-            <label class="form-label" for="imageQuality">Image Quality (<span id="imageQualityIndicator">80</span>)</label> <br />
-            <input type="range" name="imageQuality" id="imageQuality" min="0" max="100" value="80" />
-        </div>
-
-        <div class="form-field">
-            <button class="form-button" type="submit">Generate image</button>
-        </div>
-    </form>
+    </main>
 
     <script src="./app.js" type="module"></script>
 </body>
