@@ -1,0 +1,14 @@
+{
+  "name": "viewer-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lumiscaphe",
+  "license": "ISC",
+  "dependencies": {
+    "@lumiscaphe/viewer": "^4.0.9"
+  }
+}
